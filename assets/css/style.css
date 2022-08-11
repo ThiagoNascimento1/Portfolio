@@ -148,6 +148,7 @@ body {
     margin-top: 10px;
     padding-bottom: 40px;
     transition: all .5s linear;
+    display: none;
 }
 
 .skills .item {
@@ -185,6 +186,7 @@ body {
     margin-top: 20px;
     padding-bottom: 40px;
     transition: all .5s linear;
+    display: none;
 }
 
 .projects .item {
