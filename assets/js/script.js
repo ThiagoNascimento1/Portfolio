@@ -107,6 +107,15 @@ const showProjects = () => {
 
   projects = [
     {
+      title: "Finance System",
+      tech: [
+        "devicon-react-original colored",
+        "devicon-typescript-plain colored"
+      ],
+      imgexample: ["financesystem.gif", "horizontal"],
+      link: "https://github.com/Thiagonascimento1/personal-budget"
+    },
+    {
       title: "QRCode Generator",
       tech: [
         "devicon-react-original colored",
@@ -142,16 +151,6 @@ const showProjects = () => {
       ],
       imgexample: ["dictionary.gif", "vertical"],
       link: "https://github.com/Thiagonascimento1/dictionary"
-    },
-    {
-      title: "Personal Budget",
-      tech: [
-        "devicon-javascript-plain colored",
-        "devicon-bootstrap-plain colored",
-        "devicon-html5-plain colored"
-      ],
-      imgexample: ["personalbudget.gif", "horizontal"],
-      link: "https://github.com/Thiagonascimento1/personal-budget"
     }
   ];
 

@@ -1,38 +1,79 @@
 @media (min-width: 597px) {
 
-    html {
-        font-size: 65%;
-    }
-
+    /* content */
     .content {
-        width: 597px;
-        margin: 2rem auto 2rem auto;
+        max-width: 768px;
     }
 
+    /* profile */
     .personal-info .profile-image {
-        width: 20rem;
-        height: 20rem;
+        width: 250px;
+        height: 250px;
+    }
+
+    /* aboutme */
+    .aboutme .text {
+        padding: 20px 15px;
+        margin-bottom: 20px;
+    }
+
+    .aboutme .titleme {
+        padding: 25px 0;
+        margin-bottom: 30px;
+    }
+
+    .aboutme .text .title {
+        font-size: 28px;
+        font-weight: 700;
+    }
+
+    .aboutme .text .description {
+        font-size: 22px;
+        font-weight: 500;
+    }
+
+    /* skills */
+    .skills {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 10px;
     }
 
     .skills .item {
-        height: 20rem;
+        margin: auto;
+        width: 373px;
+        height: 354px;
     }
 
+    /* projects */
     .projects {
-        
-    row-gap: 3rem;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 20px;
     }
 
     .projects .item {
-        height: 27rem;
-        opacity: .7;
+        margin: auto;
+        width: 363px;
+        height: 354px;
     }
 
-    .projects .item:hover {
-        opacity: 1;
+    .img-project {
+        right: 20px;
+        bottom: 20px;
     }
 
-    .projects .item .title {
-        padding: .8rem 0;
+    .vertical,
+    .vertical img {
+        width: 162px;
+        height: 264px;
+    }
+
+    .horizontal,
+    .horizontal img {
+        width: 264px;
+        height: 162px;
+    }
+
+    .projects .item .technologies .tech {
+        font-size: 50px;
     }
 }

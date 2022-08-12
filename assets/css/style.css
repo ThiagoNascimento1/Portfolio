@@ -34,7 +34,7 @@ body {
     width: 100%;
     border-top: 1px solid var(--cor-primary);
     border-bottom: 1px solid var(--cor-primary);
-    margin: 10px 0 10px 0;
+    margin: 10px auto;
     padding: 20px 0;
 }
 
@@ -105,7 +105,7 @@ body {
 /* menu */
 
 .menu {
-    margin: 20px auto 0;
+    margin: 20px auto;
     padding: 0 15px;
     width: 340px;
     height: 50px;
@@ -141,18 +141,60 @@ body {
     cursor: pointer;
 }
 
+/* about me */
+
+.aboutme {
+    width: 90%;
+    margin: auto;
+    background: url(../images/background-me.jpg);
+    background-position: center center;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.aboutme .background-opacity {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.aboutme .text {
+    display: inline-block;
+    background-color:rgba(0, 0, 0, .6);
+    padding: 8px 12px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.aboutme .titleme {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+.aboutme .text .title {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.aboutme .text .description {
+    font-size: 18px;
+    font-weight: 500;
+}
+
 /* skills */
 
 .skills {
+    display: none;
     width: 100%;
-    margin-top: 10px;
     padding-bottom: 40px;
     transition: all .5s linear;
-    display: none;
 }
 
 .skills .item {
-    margin: 20px auto 0;
+    margin: 0 auto 20px auto;
     width: 80vw;
     max-width: 550px;
     height: 80vw;
@@ -183,14 +225,13 @@ body {
 
 .projects {
     width: 100%;
-    margin-top: 20px;
     padding-bottom: 40px;
     transition: all .5s linear;
     display: none;
 }
 
 .projects .item {
-    margin: 40px auto 0;
+    margin: 0 auto 20px auto;
     width: 80vw;
     max-width: 550px;
     height: 80vw;
