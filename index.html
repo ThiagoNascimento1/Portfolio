@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--  external CSS link  -->
+    <link rel="stylesheet" href="assets/css/config.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
     <!--  external javascript link  -->
@@ -19,6 +20,16 @@
 </head>
 <body onload="reloadPage()">
     <div class="content">
+
+        <!-- switch -->
+        <div class="theme" onclick="setTheme()">
+            <label class="switch">
+                <input type="checkbox" id="theme">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        
+
         <!--  profile  -->
         <div class="personal-info">
             <div class="profile-image"></div>
@@ -37,6 +48,7 @@
                 
             </div>
         </div>
+
         <!--  navigation  -->
         <div class="menu">
             <div class="item" onclick="handleChangeSection('aboutme')">About me</div>
@@ -44,6 +56,7 @@
             <div class="item" onclick="handleChangeSection('projects')">Projects</div>
             <div id="selected"></div>
         </div>
+
         <!-- about me -->
         <div class="aboutme" id="aboutme">
             <div class="background-opacity">
@@ -74,8 +87,10 @@
         </div>
         <!--  skills  -->
         <div class="skills" id="skills"></div>
+
         <!--  projects  -->
         <div class="projects" id="projects"></div>
+
     </div>
 </body>
 </html>

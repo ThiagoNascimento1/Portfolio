@@ -191,6 +191,31 @@ const openProject = url => {
   window.location.href = url;
 }
 
+const setTheme = () => {
+
+  const theme = document.querySelector("#theme");
+
+  if(theme.checked) {
+    document.body.style.setProperty('--cor-background-primary', '#dedede');
+    document.body.style.setProperty('--cor-background-secondary', '#919191');
+    document.body.style.setProperty('--cor-primary', 'rgb(4, 5, 23)');
+    document.body.style.setProperty('--cor-secondary', '#scscsc');
+    document.body.style.setProperty('--cor-aboutme-text-background', 'rgba(255, 255, 255, .8)');
+    document.body.style.setProperty('--cor-background-item', '#b0b0b0');
+    document.body.style.setProperty('--cor-technologies-background', 'rgba(100, 100, 100, .8)');
+  } else {
+    document.body.style.setProperty('--cor-background-primary', 'rgb(4, 5, 23)');
+    document.body.style.setProperty('--cor-background-secondary', 'rgb(17, 19, 41)');
+    document.body.style.setProperty('--cor-primary', '#fff');
+    document.body.style.setProperty('--cor-secondary', 'rgb(140, 140, 160)');
+    document.body.style.setProperty('--cor-background-item', 'rgb(13, 107, 196)');
+    document.body.style.setProperty('--cor-aboutme-text-background', 'rgba(0, 0, 0, .6)');
+    document.body.style.setProperty('--cor-technologies-background', 'rgba(1, 1, 1, .8)');
+  }
+
+  
+};
+
 const reloadPage = () => {
   showProfile();
   showSkills();

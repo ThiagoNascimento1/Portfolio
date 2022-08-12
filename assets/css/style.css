@@ -1,25 +1,4 @@
-/* zerando css */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    border: none;
-}
-
-/* config css */
-:root {
-    --cor-background-primary: rgb(4, 5, 23);
-    --cor-background-secondary: rgb(17, 19, 41);
-    --cor-primary: #fff;
-    --cor-secondary: rgb(140, 140, 160);
-    --cor-background-item: rgb(13, 107, 196);
-}
-
-/* formatando css */
-
-html {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+/* body */
 
 body {
     background-color: var(--cor-background-primary);
@@ -36,6 +15,7 @@ body {
     border-bottom: 1px solid var(--cor-primary);
     margin: 10px auto;
     padding: 20px 0;
+    position: relative;
 }
 
 /* profile */
@@ -157,11 +137,12 @@ body {
     height: 100%;
     padding: 10px;
     background-color: rgba(0, 0, 0, .3);
+    border-radius: 20px;
 }
 
 .aboutme .text {
     display: inline-block;
-    background-color:rgba(0, 0, 0, .6);
+    background-color: var(--cor-aboutme-text-background);
     padding: 8px 12px;
     border-radius: 10px;
     margin-bottom: 10px;
@@ -210,6 +191,7 @@ body {
 
 .skills .item .name-skill {
     font-size: 27px;
+    font-weight: 700;
 }
 
 .skills .item .icon-skill {
@@ -269,7 +251,6 @@ body {
     background-size: cover;
     width: 100px;
     height: 100px;
-    background-color: #fff;
 }
 
 .vertical {
@@ -296,7 +277,7 @@ body {
     justify-content: center;
     gap: 10px;
     border-radius: 15px;
-    background-color: rgba(1, 1, 1, .8);
+    background-color: var(--cor-technologies-background);
 }
 
 .projects .item .technologies .tech {
