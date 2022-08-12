@@ -191,6 +191,7 @@ const openProject = url => {
   window.location.href = url;
 }
 
+// themes
 const setTheme = () => {
 
   const theme = document.querySelector("#theme");
@@ -216,6 +217,7 @@ const setTheme = () => {
   
 };
 
+// inicialization
 const reloadPage = () => {
   showProfile();
   showSkills();
