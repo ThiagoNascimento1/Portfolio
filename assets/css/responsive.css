@@ -35,25 +35,29 @@
     /* skills */
     .skills {
         grid-template-columns: repeat(2, 1fr);
-        row-gap: 10px;
+        row-gap: 40px;
     }
 
     .skills .item {
         margin: auto;
-        width: 373px;
-        height: 354px;
+        width: 40vw;
+        height: 40vw;
+        max-width: 353px;
+        max-height: 354px;
     }
 
     /* projects */
     .projects {
         grid-template-columns: repeat(2, 1fr);
-        row-gap: 20px;
+        row-gap: 40px;
     }
 
     .projects .item {
         margin: auto;
-        width: 363px;
-        height: 354px;
+        width: 40vw;
+        height: 40vw;
+        max-width: 353px;
+        max-height: 354px;
     }
 
     .img-project {
