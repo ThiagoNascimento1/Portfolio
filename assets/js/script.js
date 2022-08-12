@@ -155,26 +155,26 @@ const showProjects = () => {
     }
   ];
 
-  projects.map(product => {
+  projects.map(project => {
     // project item
     let item = document.createElement("div");
     item.className = "item";
-    item.onclick = () => openProject(product.link);
-    item.innerHTML = `<div class="title">${product.title}</div>`;
+    item.onclick = () => openProject(project.link);
+    item.innerHTML = `<div class="title">${project.title}</div>`;
 
     // content image
     let contentImg = document.createElement("div");
-    contentImg.className = `img-project ${product.imgexample[1]}`;
-    contentImg.innerHTML = `<img src="assets/images/${product.imgexample[0]}"/>`;
+    contentImg.className = `img-project ${project.imgexample[1]}`;
+    contentImg.innerHTML = `<img src="assets/images/${project.imgexample[0]}"/>`;
     item.appendChild(contentImg);
 
     //content technologies
     let technologies = document.createElement("div");
-    technologies.className = "technologies";
+    technologies.className = `${project.imgexample[1]}tech technologies`;
 
     item.appendChild(technologies);
 
-    (product.tech).map(tech => {
+    (project.tech).map(tech => {
 
       //content tech
       let contentTech = document.createElement("div");
