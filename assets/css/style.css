@@ -272,16 +272,20 @@ body {
     background-color: #fff;
 }
 
-.vertical,
-.vertical img {
-    width: 125px;
-    height: 204px;
+.vertical {
+    height: 70%;
+    width: 45%;
 }
 
-.horizontal,
+.horizontal {
+    width: 75%;
+    height: 45%;
+}
+
+.vertical img,
 .horizontal img {
-    width: 204px;
-    height: 125px;
+    width: 100%;
+    height: 100%;
 }
 
 .projects .item .technologies {

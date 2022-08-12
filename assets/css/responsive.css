@@ -1,4 +1,4 @@
-@media (min-width: 597px) {
+@media (min-width: 768px) {
 
     /* content */
     .content {
@@ -12,6 +12,11 @@
     }
 
     /* aboutme */
+
+    .aboutme {
+        width: 100%;
+    }
+
     .aboutme .text {
         padding: 20px 15px;
         margin-bottom: 20px;
@@ -61,20 +66,8 @@
     }
 
     .img-project {
-        right: 20px;
-        bottom: 20px;
-    }
-
-    .vertical,
-    .vertical img {
-        width: 162px;
-        height: 264px;
-    }
-
-    .horizontal,
-    .horizontal img {
-        width: 264px;
-        height: 162px;
+        right: 15px;
+        bottom: 15px;
     }
 
     .projects .item .technologies .tech {
