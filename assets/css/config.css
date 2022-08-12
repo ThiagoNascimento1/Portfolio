@@ -15,8 +15,10 @@
   --cor-primary: #fff;
   --cor-secondary: rgb(140, 140, 160);
   --cor-background-item: rgb(13, 107, 196);
+  --cor-aboutme-background: rgba(0, 0, 0, .3);
   --cor-aboutme-text-background: rgba(0, 0, 0, .6);
   --cor-technologies-background: rgba(1, 1, 1, .8);
+  --cor-text-skill: #fff;
 }
 
 

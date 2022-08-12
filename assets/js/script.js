@@ -198,12 +198,16 @@ const setTheme = () => {
 
   if(theme.checked) {
     document.body.style.setProperty('--cor-background-primary', '#dedede');
-    document.body.style.setProperty('--cor-background-secondary', '#919191');
+    document.body.style.setProperty('--cor-background-secondary', 'linear-gradient(90deg, rgba(0,0,0,1) 33%, rgba(222,222,222,1) 100%)');
     document.body.style.setProperty('--cor-primary', 'rgb(4, 5, 23)');
     document.body.style.setProperty('--cor-secondary', '#scscsc');
-    document.body.style.setProperty('--cor-aboutme-text-background', 'rgba(255, 255, 255, .8)');
-    document.body.style.setProperty('--cor-background-item', '#b0b0b0');
+    document.body.style.setProperty('--cor-aboutme-text-background', 'rgba(255, 255, 255, 1)');
+    document.body.style.setProperty('--cor-background-item', '#fff');
     document.body.style.setProperty('--cor-technologies-background', 'rgba(100, 100, 100, .8)');
+    document.body.style.setProperty('--cor-aboutme-background', 'rgba(255, 255, 255, .5)');
+
+    const aboutme = document.querySelector('#aboutme');
+    aboutme.style.background = "url(assets/images/background-light.jpg)";
   } else {
     document.body.style.setProperty('--cor-background-primary', 'rgb(4, 5, 23)');
     document.body.style.setProperty('--cor-background-secondary', 'rgb(17, 19, 41)');
@@ -211,7 +215,10 @@ const setTheme = () => {
     document.body.style.setProperty('--cor-secondary', 'rgb(140, 140, 160)');
     document.body.style.setProperty('--cor-background-item', 'rgb(13, 107, 196)');
     document.body.style.setProperty('--cor-aboutme-text-background', 'rgba(0, 0, 0, .6)');
-    document.body.style.setProperty('--cor-technologies-background', 'rgba(1, 1, 1, .8)');
+    document.body.style.setProperty('--cor-aboutme-background', 'rgba(0, 0, 0, .3)');
+
+    const aboutme = document.querySelector('#aboutme');
+    aboutme.style.background = "url(assets/images/background-me.jpg)";
   }
 
   
