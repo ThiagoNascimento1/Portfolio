@@ -50,6 +50,11 @@ body {
     animation: changeOpacity .7s infinite;
 }
 
+@keyframes changeOpacity {
+    0%, 100% {opacity: 1}
+    50% {opacity: 0}
+}
+
 .personal-info .profission {
     font-size: 18px;
     color: var(--cor-secondary);
