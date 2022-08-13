@@ -227,6 +227,22 @@ const setTheme = () => {
 
 // Show Content Contact
 
+const animationButton = (value) => {
+  const left = document.querySelector(".left");
+  const right = document.querySelector(".right");
+  if (value) {
+    left.style.width = "calc(100% + 7px)";
+    left.style.height = "calc(100% + 7px)";
+    right.style.width = "calc(100% + 7px)";
+    right.style.height = "calc(100% + 7px)";
+  } else {
+    left.style.width = "20px";
+    left.style.height = "20px";
+    right.style.width = "20px";
+    right.style.height = "20px";
+  }
+};
+
 let displayContact = false;
 const showContact = () => {
   displayContact = !displayContact;
@@ -234,9 +250,11 @@ const showContact = () => {
   if (displayContact) {
     divContact.style.height = "45px";
     divContact.style.opacity = '1';
+    animationButton(displayContact);
   } else {
     divContact.style.height = "0px";
     divContact.style.opacity = '0';
+    animationButton(displayContact);
   }
 };
 
