@@ -13,8 +13,6 @@
     <!--  icon import  -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <script src="https://kit.fontawesome.com/788f55f3b4.js" crossorigin="anonymous"></script>
-    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
-    <link rel="shortcut icon" href="assets/images/profile.jpg" type="image/x-icon">
 
     <title>Portfólio</title>
 </head>
@@ -23,10 +21,12 @@
 
         <!-- switch -->
         <div class="theme" onclick="setTheme()">
+            dark
             <label class="switch">
                 <input type="checkbox" id="theme">
                 <span class="slider round"></span>
             </label>
+            light
         </div>
         
 
@@ -43,9 +43,17 @@
             
                 <a href="https://github.com/thiagonascimento1"><i class="fa-brands fa-github"></i></a>
 
-                <a href="mailto:thiagonascimentodeveloper@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+            <div class="contact" onclick="showContact()">
+                <button id="showContact">contact</button>  
+                <div class="icon-contact">
 
+                    <a href="https://api.whatsapp.com/send?phone=85998242813&text=Olá, Thiago!"><i class="fa-brands fa-whatsapp"></i></a>
                 
+                    <a href="mailto:thiagonascimentodeveloper@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+
+                    <span>(85) 99824-2813</span>
+                </div>
             </div>
         </div>
 

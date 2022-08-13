@@ -63,8 +63,6 @@ body {
 }
 
 .personal-info .social {
-    width: 200px;
-    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -78,8 +76,82 @@ body {
     color: var(--cor-primary);
 }
 
-.personal-info .social a:hover {
-    color: inherit;
+/* personal contact */
+
+.personal-info .contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* button show contact */
+
+.contact button {
+    width: 105px;
+    height: 35px;
+    background-color: transparent;
+    font-size: 20px;
+    color: var(--cor-primary); 
+    position: relative;
+    cursor: pointer;
+}
+
+.contact button:before,
+.contact button:after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 3px solid var(--cor-border-button);
+    border-radius: 10px;
+    transition: all .5s;
+}
+
+.contact button:before {
+    top: -5px;
+    left: -5px;
+    border-width: 3px 0 0 3px;
+}
+
+.contact button:after {
+    bottom: -5px;
+    right: -5px;
+    border-width: 0 3px 3px 0;
+}
+
+.contact button:hover:after,
+.contact button:hover:before {
+    width: calc(100% + 7px);
+    height: calc(100% + 7px);
+}
+
+/* div content icons for contact */
+
+.contact .icon-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    height: 0px;
+    padding: 0 5px;
+    background-color: var(--cor-border-button);
+    border-radius: 10px;
+    opacity: 0;
+    overflow: hidden;
+}
+
+.contact .icon-contact a {
+    display: inline-block;
+    font-size: 25px;
+    padding: 5px 8px;
+    color: #fff;
+}
+
+.contact .icon-contact span {
+    padding: 0 8px;
+    color: #fff;
 }
 
 /* menu */
@@ -222,7 +294,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 5px;
-    background: url(../images/background-project.jpg) no-repeat;
+    background: var(--img-background-project) no-repeat;
     background-position: center center;
     background-size: cover;
     background-color: var(--cor-background-secondary);
@@ -230,7 +302,6 @@ body {
     overflow: hidden;
     position: relative;
     cursor: pointer;
-    animation: shadow 4s linear infinite; 
 }
 
 .projects .item .title {
@@ -248,10 +319,10 @@ body {
     border-radius: 5px;
     right: 10px;
     bottom: 10px;
-    animation: shadow 4s linear infinite;
     background-size: cover;
     width: 100px;
     height: 100px;
+    box-shadow: 0 0 5px #000;
 }
 
 .vertical {

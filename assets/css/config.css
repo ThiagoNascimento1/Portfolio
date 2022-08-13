@@ -15,10 +15,14 @@
   --cor-primary: #fff;
   --cor-secondary: rgb(140, 140, 160);
   --cor-background-item: rgb(13, 107, 196);
+  --cor-border-button: rgb(13, 107, 196);
   --cor-aboutme-background: rgba(0, 0, 0, .3);
   --cor-aboutme-text-background: rgba(0, 0, 0, .6);
   --cor-technologies-background: rgba(1, 1, 1, .8);
   --cor-text-skill: #fff;
+
+  /* background image project */
+  --img-background-project: url(../images/background-project.jpg);
 }
 
 
@@ -28,10 +32,18 @@ html {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+ /* button set theme */
+
 .theme {
   position: absolute;
-  right: 20px;
-  top: 20px;
+  right: 15px;
+  top: 15px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 700;
 }
 
 .switch {

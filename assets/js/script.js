@@ -203,8 +203,9 @@ const setTheme = () => {
     document.body.style.setProperty('--cor-secondary', '#scscsc');
     document.body.style.setProperty('--cor-aboutme-text-background', 'rgba(255, 255, 255, 1)');
     document.body.style.setProperty('--cor-background-item', '#fff');
-    document.body.style.setProperty('--cor-technologies-background', 'rgba(100, 100, 100, .8)');
     document.body.style.setProperty('--cor-aboutme-background', 'rgba(255, 255, 255, .5)');
+    document.body.style.setProperty('--cor-border-button', 'rgba(0, 0, 0, .8)');
+    document.body.style.setProperty('--img-background-project', 'url(../images/background-project2.jpg)');
 
     const aboutme = document.querySelector('#aboutme');
     aboutme.style.background = "url(assets/images/background-light.jpg)";
@@ -216,12 +217,27 @@ const setTheme = () => {
     document.body.style.setProperty('--cor-background-item', 'rgb(13, 107, 196)');
     document.body.style.setProperty('--cor-aboutme-text-background', 'rgba(0, 0, 0, .6)');
     document.body.style.setProperty('--cor-aboutme-background', 'rgba(0, 0, 0, .3)');
+    document.body.style.setProperty('--cor-border-button', 'rgb(13, 107, 196)');
+    document.body.style.setProperty('--img-background-project', 'url(../images/background-project.jpg)');
 
     const aboutme = document.querySelector('#aboutme');
     aboutme.style.background = "url(assets/images/background-me.jpg)";
   }
+};
 
-  
+// Show Content Contact
+
+let displayContact = false;
+const showContact = () => {
+  displayContact = !displayContact;
+  const divContact = document.querySelector(".icon-contact");
+  if (displayContact) {
+    divContact.style.height = "45px";
+    divContact.style.opacity = '1';
+  } else {
+    divContact.style.height = "0px";
+    divContact.style.opacity = '0';
+  }
 };
 
 // inicialization
