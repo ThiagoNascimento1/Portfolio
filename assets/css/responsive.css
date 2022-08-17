@@ -1,38 +1,78 @@
-@media (min-width: 597px) {
+@media (min-width: 768px) {
 
-    html {
-        font-size: 65%;
-    }
-
+    /* content */
     .content {
-        width: 597px;
-        margin: 2rem auto 2rem auto;
+        max-width: 992px;
     }
 
+    /* profile */
     .personal-info .profile-image {
-        width: 20rem;
-        height: 20rem;
+        width: 250px;
+        height: 250px;
+    }
+
+    /* aboutme */
+
+    .aboutme {
+        width: 100%;
+    }
+
+    .aboutme .text {
+        padding: 20px 15px;
+        margin-bottom: 20px;
+    }
+
+    .aboutme .titleme {
+        padding: 25px 0;
+        margin-bottom: 30px;
+    }
+
+    .aboutme .text .title {
+        font-size: 28px;
+        font-weight: 700;
+    }
+
+    .aboutme .text .description {
+        font-size: 22px;
+        font-weight: 500;
+    }
+
+    /* skills */
+    .skills {
+        padding: 0 20px;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 40px;
     }
 
     .skills .item {
-        height: 20rem;
+        margin: auto;
+        width: 40vw;
+        height: 40vw;
+        max-width: 353px;
+        max-height: 354px;
     }
 
+    /* projects */
     .projects {
-        
-    row-gap: 3rem;
+        padding: 0 20px;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 40px;
     }
 
     .projects .item {
-        height: 27rem;
-        opacity: .7;
+        margin: auto;
+        width: 40vw;
+        height: 40vw;
+        max-width: 353px;
+        max-height: 354px;
     }
 
-    .projects .item:hover {
-        opacity: 1;
+    .img-project {
+        right: 15px;
+        bottom: 15px;
     }
 
-    .projects .item .title {
-        padding: .8rem 0;
+    .projects .item .technologies .tech {
+        font-size: 50px;
     }
 }
