@@ -198,7 +198,7 @@ const setTheme = () => {
 
   if(theme.checked) {
     document.body.style.setProperty('--cor-background-primary', '#dedede');
-    document.body.style.setProperty('--cor-background-secondary', 'linear-gradient(90deg, rgba(0,0,0,1) 33%, rgba(222,222,222,1) 100%)');
+    document.body.style.setProperty('--cor-background-secondary', 'linear-gradient(90deg, rgba(0,0,0,1) 98%, rgba(222,222,222,1) 100%)');
     document.body.style.setProperty('--cor-primary', 'rgb(4, 5, 23)');
     document.body.style.setProperty('--cor-secondary', '#scscsc');
     document.body.style.setProperty('--cor-aboutme-text-background', 'rgba(255, 255, 255, 1)');
